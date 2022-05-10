@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import FaqCard from "../../components/card/FaqCard";
+import { faqs } from "../../data/data";
 import "./home.css";
 
 export default function Home() {
@@ -28,10 +29,9 @@ export default function Home() {
 
       <div className="faqs">
         <h2 className="mainTitle">FAQS</h2>
-        <FaqCard
-          cardTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, error!"
-          cardDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae? Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta? Odit, officiis reprehenderit. Error magni possimus voluptas libero omnis? Tenetur, minima."
-        />
+        {faqs.map((faq) => {
+          return <FaqCard cardTitle={faq.faq} cardDesc={faq.ans} />;
+        })}
       </div>
 
       <Footer />
