@@ -1,11 +1,14 @@
 .category{
   display: flex;
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap;  
   border-radius: .5rem;
   box-shadow: .5rem 1rem 1rem grey;
   height: 8rem;
   width: 25rem;
 
+}
+.category .image{
+  height: 5rem;
+  width: 15rem;
+  background-color: blueviolet;
 }
