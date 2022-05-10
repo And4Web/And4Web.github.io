@@ -1,0 +1,46 @@
+.footer{
+  height: 20rem;
+  width: 100%;
+  background-color: rgb(54, 81, 254);
+  padding: 3.6rem 9%;
+}
+.footer .logo{
+  background-image: url(../../images/logo.PNG);
+  height: 4rem;
+  width: 12rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.footer .footer-container{
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  
+}
+.menu-container{
+  /* background-color: blueviolet; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.menu-container .menu-column{
+  /* background-color: brown; */
+  margin-left: 1.5rem;
+}
+.menu-container .menu{
+  font-size: 1.5rem;
+  /* background-color: blue; */
+  color: white;
+  padding: .5rem;
+  margin: .5rem;
+  margin-top: 0;
+  text-align: start;
+}
+
+.copyright{
+  color: white;
+  font-size: 1.1rem;
+}

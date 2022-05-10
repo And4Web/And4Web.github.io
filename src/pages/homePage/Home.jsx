@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import "./home.css";
 
@@ -25,6 +26,8 @@ export default function Home() {
       </div>
 
       <div className="faqs"></div>
+
+      <Footer />
     </div>
   );
 }
