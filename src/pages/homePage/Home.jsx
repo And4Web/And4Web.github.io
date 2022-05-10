@@ -3,7 +3,8 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import FaqCard from "../../components/card/FaqCard";
-import { faqs } from "../../data/data";
+import ArticleCard from "../../components/article/ArticleCard";
+import { faqs, reads } from "../../data/data";
 import "./home.css";
 
 export default function Home() {
@@ -31,6 +32,13 @@ export default function Home() {
         <h2 className="mainTitle">FAQS</h2>
         {faqs.map((faq) => {
           return <FaqCard cardTitle={faq.faq} cardDesc={faq.ans} />;
+        })}
+      </div>
+
+      <div className="read">
+        <h2 className="mainTitle">have a read</h2>
+        {reads.map((read) => {
+          return <ArticleCard cardTitle={read.title} cardDesc={read.desc} />;
         })}
       </div>
 

@@ -16,7 +16,7 @@ export const faqs = [
   },
 ];
 
-export const haveARead = [
+export const reads = [
   {
     id: 0,
     title: "The right quality",

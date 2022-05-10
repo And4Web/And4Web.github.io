@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="menu-column">
               <div className="menu">terms & conditions</div>
               <div className="menu">return & refund policy</div>
-              <div className="menu">shippig & delivery policy</div>
+              <div className="menu">shipping & delivery policy</div>
             </div>
           </div>
         </div>
