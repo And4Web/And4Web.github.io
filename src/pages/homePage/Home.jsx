@@ -2,8 +2,9 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
-import FaqCard from "../../components/card/FaqCard";
+import FaqCard from "../../components/faq/FaqCard";
 import ArticleCard from "../../components/article/ArticleCard";
+import TopicsCard from "../../components/topics/TopicsCard";
 import { faqs, reads, topics } from "../../data/data";
 import "./home.css";
 
@@ -31,21 +32,36 @@ export default function Home() {
       <div className="faqs">
         <h2 className="mainTitle">FAQS</h2>
         {faqs.map((faq) => {
-          return <FaqCard cardTitle={faq.faq} cardDesc={faq.ans} />;
+          return (
+            <FaqCard key={faq.id} cardTitle={faq.faq} cardDesc={faq.ans} />
+          );
         })}
       </div>
 
       <div className="read">
         <h2 className="mainTitle">have a read</h2>
         {reads.map((read) => {
-          return <ArticleCard cardTitle={read.title} cardDesc={read.desc} />;
+          return (
+            <ArticleCard
+              key={read.id}
+              cardTitle={read.title}
+              cardDesc={read.desc}
+            />
+          );
         })}
       </div>
 
       <div className="topics">
         <h2 className="mainTitle">topics you can't miss</h2>
         {topics.map((topic) => {
-          return <ArticleCard cardTitle={topic.title} cardDesc={topic.desc} />;
+          return (
+            <TopicsCard
+              key={topic.id}
+              cardTitle={topic.title}
+              cardDesc={topic.desc}
+              backgroundImage={topic.imageUrl}
+            />
+          );
         })}
       </div>
 

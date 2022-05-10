@@ -1,17 +1,17 @@
 export const faqs = [
   {
     id: 0,
-    faq: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, error!",
+    faq: "Lorem ipsum dolor sit, amet consectetur adipisicing ",
     ans: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae? Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta? Odit, officiis reprehenderit. Error magni possimus voluptas libero omnis? Tenetur, minima.",
   },
   {
     id: 1,
-    faq: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, error!",
+    faq: "Lorem ipsum dolor sit, amet ",
     ans: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae? Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta? Odit, officiis reprehenderit. Error magni possimus voluptas libero omnis? Tenetur, minima.",
   },
   {
     id: 2,
-    faq: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, error!",
+    faq: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores",
     ans: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae? Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta? Odit, officiis reprehenderit. Error magni possimus voluptas libero omnis? Tenetur, minima.",
   },
 ];
@@ -39,10 +39,12 @@ export const topics = [
     id: 0,
     title: "topics you can't miss",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta",
+    imageUrl: "../../images/topics1.jpg",
   },
   {
     id: 1,
     title: "how to clean/cut your seafood",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam non illum repudiandae maxime fugit? Deleniti enim modi repellendus? Quisquam nisi minus recusandae Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta Quas, quasi iure dicta quaerat tempora ab animi illo libero quis distinctio nostrum placeat sapiente expedita soluta",
+    imageUrl: "../../images/topics2.jpg",
   },
 ];
