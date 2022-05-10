@@ -31,13 +31,14 @@
   margin-left: 1.5rem;
 }
 .menu-container .menu{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* background-color: blue; */
   color: white;
   padding: .5rem;
   margin: .5rem;
   margin-top: 0;
   text-align: start;
+  cursor: pointer;
 }
 
 .copyright{
