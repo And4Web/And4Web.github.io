@@ -28,7 +28,7 @@
   position: absolute;
   bottom: 1.5rem;
   right: 3rem;
-  cursor: pointer;
+  
  
 }
 .card .more p{
@@ -37,4 +37,9 @@
   padding-right: 1rem;
   color: rgb(54, 81, 254);
   text-transform: uppercase;
+}
+.card .more i{  
+  font-size: 1.5rem;
+  color: rgb(54, 81, 254);
+  cursor: pointer;
 }

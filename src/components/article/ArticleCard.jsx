@@ -12,7 +12,7 @@ export default function ArticleCard({ ...props }) {
         </div>
         <div className="more">
           <p>read more</p>
-          <i class="fa-solid fa-circle-chevron-right "></i>
+          <i class="fa-solid fa-angle-right"></i>
         </div>
       </div>
     </div>

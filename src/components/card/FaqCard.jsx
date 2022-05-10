@@ -8,7 +8,7 @@ export default function FaqCard({ ...props }) {
       <div className="card">
         <div className="firstLine">
           <h3>{cardTitle}</h3>
-          <i class="fa-solid fa-circle-chevron-down dropdown"></i>
+          <i class="fa-solid fa-angle-down dropdown"></i>
         </div>
         <p>{cardDesc}</p>
       </div>

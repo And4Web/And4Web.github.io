@@ -21,8 +21,10 @@
   font-size: 1.1rem;
 }
 .card .dropdown{
+  font-size: 2.2rem;
+  color: rgb(54, 81, 254);
   position: absolute;
-  top: .5rem;
+  top: .2rem;
   right: 1rem;
   cursor: pointer;
  
