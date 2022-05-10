@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import FaqCard from "../../components/faq/FaqCard";
 import ArticleCard from "../../components/article/ArticleCard";
+import Card from "../../components/card/Card";
 import Section from "../../components/section/Section";
 import TopicsCard from "../../components/topics/TopicsCard";
 import { db } from "../../firebaseConfig";
@@ -15,10 +16,12 @@ export default function Home() {
   const [faqs, setFaqs] = useState([]);
   const [reads, setReads] = useState([]);
   const [topics, setTopics] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   const faqsCollectionRef = collection(db, "faqs");
   const readsCollectionRef = collection(db, "reads");
   const topicsCollectionRef = collection(db, "topics");
+  const categoriesCollectionRef = collection(db, "categories");
 
   useEffect(() => {
     const getFaqs = async () => {
@@ -36,9 +39,15 @@ export default function Home() {
       setTopics(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 
+    const getCategories = async () => {
+      const data = await getDocs(categoriesCollectionRef);
+      setCategories(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+
     getFaqs();
     getReads();
     getTopics();
+    getCategories();
   }, []);
 
   return (
@@ -52,6 +61,15 @@ export default function Home() {
 
       <Section sectionClass="categories" sectionTitle="categories">
         <div className="test"></div>
+        {/* {categories.map((category) => {
+          return (
+            <Card
+              key={category.id}
+              image={category.image}
+              title={category.category}
+            />
+          );
+        })} */}
       </Section>
 
       <Section sectionClass="glance" sectionTitle="a glance at our product">
@@ -60,17 +78,15 @@ export default function Home() {
         </div>
       </Section>
 
-      <div className="faqs">
-        <h2 className="mainTitle">FAQS</h2>
+      <Section sectionClass="faqs" sectionTitle="FAQS">
         {faqs.map((faq) => {
           return (
             <FaqCard key={faq.id} cardTitle={faq.faq} cardDesc={faq.ans} />
           );
         })}
-      </div>
+      </Section>
 
-      <div className="read">
-        <h2 className="mainTitle">have a read</h2>
+      <Section sectionClass="read" sectionTitle="have a read">
         {reads.map((read) => {
           return (
             <ArticleCard
@@ -80,10 +96,9 @@ export default function Home() {
             />
           );
         })}
-      </div>
+      </Section>
 
-      <div className="topics">
-        <h2 className="mainTitle">topics you can't miss</h2>
+      <Section sectionClass="topics" sectionTitle="topics you can't miss">
         {topics.map((topic) => {
           return (
             <TopicsCard
@@ -94,7 +109,7 @@ export default function Home() {
             />
           );
         })}
-      </div>
+      </Section>
 
       <Footer />
     </div>
