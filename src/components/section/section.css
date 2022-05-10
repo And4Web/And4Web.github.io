@@ -1,0 +1,67 @@
+.banner{
+  height: auto;
+  width: 100%;
+  /* object-fit: cover; */
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+
+}
+.mainTitle{
+  font-size: 3rem;
+  font-weight: light;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+  
+}
+.intro p{
+  font-size: 1.4rem;
+}
+.categories{
+  margin: 2rem 9%;
+}
+.categories h3{
+  font-size: 2.2rem;
+  float: left;
+  margin-bottom: 1rem;
+  
+}
+.categories .test{
+  display: inline-block;
+  background-color: antiquewhite;
+  height: 20rem;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 2rem grey;
+  margin-bottom: 4rem;
+}
+
+.glance{
+  margin: 2rem 9%;
+}
+
+.video-container{
+  height: 30rem;
+  width: 100%;  
+  border-radius: 1rem;
+  background-image: url("../../images/topics1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  
+}
+.video-container .play{
+  font-size: 6rem;
+  position: absolute;
+  top: 43%;
+  left: 47%;
+  color: white;
+  
+  
+}

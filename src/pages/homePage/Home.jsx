@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import FaqCard from "../../components/faq/FaqCard";
 import ArticleCard from "../../components/article/ArticleCard";
+import Section from "../../components/section/Section";
 import TopicsCard from "../../components/topics/TopicsCard";
 import { db } from "../../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
@@ -45,22 +46,19 @@ export default function Home() {
       <Header />
       <img src={banner} alt="banner" className="banner" />
 
-      <div className="intro">
-        <h2 className="mainTitle">How it works</h2>
+      <Section sectionClass="intro" sectionTitle="how it works">
         <p> sea basket delivers fresh sourced seafood in a few easy clicks</p>
-      </div>
+      </Section>
 
-      <div className="categories">
-        <h3 className="mainTitle">Categories</h3>
+      <Section sectionClass="categories" sectionTitle="categories">
         <div className="test"></div>
-      </div>
+      </Section>
 
-      <div className="glance">
-        <h2 className="mainTitle">a glance at our product</h2>
+      <Section sectionClass="glance" sectionTitle="a glance at our product">
         <div className="video-container">
           <i class="play fa-solid fa-circle-play"></i>
         </div>
-      </div>
+      </Section>
 
       <div className="faqs">
         <h2 className="mainTitle">FAQS</h2>
