@@ -8,7 +8,8 @@
   position: relative;
   height: 100%;
   width: auto;
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card .topic{
   display: flex;

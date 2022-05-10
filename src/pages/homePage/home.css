@@ -47,7 +47,21 @@
 
 .video-container{
   height: 30rem;
-  width: 100%;
-  background-color: blue;
+  width: 100%;  
   border-radius: 1rem;
+  background-image: url("../../images/topics1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  
+}
+.video-container .play{
+  font-size: 6rem;
+  position: absolute;
+  top: 43%;
+  left: 47%;
+  color: white;
+  
+  
 }
