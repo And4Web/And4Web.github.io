@@ -5,12 +5,12 @@
   border-radius: 1rem;
   box-shadow: .1rem .1rem .7rem grey;
   padding: 3rem;
-}
-.card .firstLine{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
+}
+.card .content{
+  display: flex;
+  flex-direction: column;   
+  padding-bottom: 2rem; 
   
 }
 .card h3{
@@ -19,11 +19,22 @@
 }
 .card p{
   font-size: 1.1rem;
+  
 }
 .card .more{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;  
   position: absolute;
-  top: .5rem;
-  right: 1rem;
+  bottom: 1.5rem;
+  right: 3rem;
   cursor: pointer;
  
+}
+.card .more p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 1rem;
+  color: rgb(54, 81, 254);
+  text-transform: uppercase;
 }

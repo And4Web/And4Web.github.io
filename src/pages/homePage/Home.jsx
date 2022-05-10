@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import banner from "../../images/banner.png";
 import FaqCard from "../../components/card/FaqCard";
 import ArticleCard from "../../components/article/ArticleCard";
-import { faqs, reads } from "../../data/data";
+import { faqs, reads, topics } from "../../data/data";
 import "./home.css";
 
 export default function Home() {
@@ -39,6 +39,13 @@ export default function Home() {
         <h2 className="mainTitle">have a read</h2>
         {reads.map((read) => {
           return <ArticleCard cardTitle={read.title} cardDesc={read.desc} />;
+        })}
+      </div>
+
+      <div className="topics">
+        <h2 className="mainTitle">topics you can't miss</h2>
+        {topics.map((topic) => {
+          return <ArticleCard cardTitle={topic.title} cardDesc={topic.desc} />;
         })}
       </div>
 

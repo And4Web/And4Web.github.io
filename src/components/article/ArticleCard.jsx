@@ -6,11 +6,14 @@ export default function ArticleCard({ ...props }) {
   return (
     <div>
       <div className="card">
-        <div className="firstLine">
+        <div className="content">
           <h3>{cardTitle}</h3>
-          <i class="fa-solid fa-circle-chevron-down more"></i>
+          <p>{cardDesc}</p>
         </div>
-        <p>{cardDesc}</p>
+        <div className="more">
+          <p>read more</p>
+          <i class="fa-solid fa-circle-chevron-right "></i>
+        </div>
       </div>
     </div>
   );
